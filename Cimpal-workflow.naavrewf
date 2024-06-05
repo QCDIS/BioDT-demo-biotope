@@ -1,31 +1,20 @@
 {
   "chart": {
     "offset": {
-      "x": 179.46,
-      "y": 417.65
+      "x": -124.68,
+      "y": 393.36
     },
-    "scale": 0.482,
+    "scale": 0.962,
     "nodes": {
-      "cb0f035b-ecea-40c7-aa06-539c0e923252": {
-        "id": "cb0f035b-ecea-40c7-aa06-539c0e923252",
+      "52dded77-6cc9-49b4-afbf-6f1ababbe59c": {
+        "id": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
         "position": {
-          "x": 267.21428571428584,
-          "y": 127.7460317460317
+          "x": 474.7833251953125,
+          "y": 63
         },
         "orientation": 0,
         "type": "input-output",
         "ports": {
-          "zones_file": {
-            "properties": {
-              "color": "#8bac53"
-            },
-            "id": "zones_file",
-            "type": "right",
-            "position": {
-              "x": 197.5,
-              "y": 17.5
-            }
-          },
           "biotope_shp_path_file": {
             "properties": {
               "color": "#2d863a"
@@ -34,18 +23,7 @@
             "type": "right",
             "position": {
               "x": 197.5,
-              "y": 45.5
-            }
-          },
-          "weight_file": {
-            "properties": {
-              "color": "#9bc587"
-            },
-            "id": "weight_file",
-            "type": "right",
-            "position": {
-              "x": 197.5,
-              "y": 74.5
+              "y": 17.5
             }
           },
           "occ_taxa": {
@@ -56,7 +34,7 @@
             "type": "right",
             "position": {
               "x": 197.5,
-              "y": 102.5
+              "y": 45.5
             }
           },
           "pathway_file": {
@@ -64,6 +42,28 @@
               "color": "#3d862d"
             },
             "id": "pathway_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 74.5
+            }
+          },
+          "weight_file": {
+            "properties": {
+              "color": "#9bc587"
+            },
+            "id": "weight_file",
+            "type": "right",
+            "position": {
+              "x": 197.5,
+              "y": 102.5
+            }
+          },
+          "zones_file": {
+            "properties": {
+              "color": "#8bac53"
+            },
+            "id": "zones_file",
             "type": "right",
             "position": {
               "x": 197.5,
@@ -75,22 +75,10 @@
           "title": "cimpal-get-files-gabriel-pelouze-lifewatch-eu",
           "vars": [
             {
-              "name": "zones_file",
-              "direction": "output",
-              "type": "datatype",
-              "color": "#8bac53"
-            },
-            {
               "name": "biotope_shp_path_file",
               "direction": "output",
               "type": "datatype",
               "color": "#2d863a"
-            },
-            {
-              "name": "weight_file",
-              "direction": "output",
-              "type": "datatype",
-              "color": "#9bc587"
             },
             {
               "name": "occ_taxa",
@@ -103,6 +91,18 @@
               "direction": "output",
               "type": "datatype",
               "color": "#3d862d"
+            },
+            {
+              "name": "weight_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#9bc587"
+            },
+            {
+              "name": "zones_file",
+              "direction": "output",
+              "type": "datatype",
+              "color": "#8bac53"
             }
           ],
           "params": [
@@ -127,31 +127,31 @@
           "height": 150
         }
       },
-      "1c18ab14-7b6e-4a0f-b94f-d03d12db793b": {
-        "id": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
+      "20851d27-523e-4e5c-a375-d8fe49aa0c29": {
+        "id": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
         "position": {
-          "x": 760.4365079365078,
-          "y": 192.77777777777777
+          "x": 1031.7833251953125,
+          "y": 0
         },
         "orientation": 0,
         "type": "input-output",
         "ports": {
-          "occ_taxa": {
+          "biotope_shp_path_file": {
             "properties": {
-              "color": "#862d68"
+              "color": "#2d863a"
             },
-            "id": "occ_taxa",
+            "id": "biotope_shp_path_file",
             "type": "left",
             "position": {
               "x": 50.5,
               "y": 31.5
             }
           },
-          "biotope_shp_path_file": {
+          "occ_taxa": {
             "properties": {
-              "color": "#2d863a"
+              "color": "#862d68"
             },
-            "id": "biotope_shp_path_file",
+            "id": "occ_taxa",
             "type": "left",
             "position": {
               "x": 50.5,
@@ -196,16 +196,16 @@
           "title": "cimpal-calculator-gabriel-pelouze-lifewatch-eu",
           "vars": [
             {
-              "name": "occ_taxa",
-              "direction": "input",
-              "type": "datatype",
-              "color": "#862d68"
-            },
-            {
               "name": "biotope_shp_path_file",
               "direction": "input",
               "type": "datatype",
               "color": "#2d863a"
+            },
+            {
+              "name": "occ_taxa",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#862d68"
             },
             {
               "name": "pathway_file",
@@ -245,11 +245,11 @@
           "height": 150
         }
       },
-      "ba597498-13f9-4af0-ab52-38c1e6590da0": {
-        "id": "ba597498-13f9-4af0-ab52-38c1e6590da0",
+      "d1a7b12f-478a-473b-a24c-b728da71df89": {
+        "id": "d1a7b12f-478a-473b-a24c-b728da71df89",
         "position": {
-          "x": 1265.6979451676593,
-          "y": 23.809523809523814
+          "x": 1457.7833251953125,
+          "y": 83
         },
         "orientation": 0,
         "type": "input-output",
@@ -327,11 +327,11 @@
           "height": 150
         }
       },
-      "03f1c124-d239-45e8-aa07-9ddb7511e51a": {
-        "id": "03f1c124-d239-45e8-aa07-9ddb7511e51a",
+      "ef330994-e947-42d6-a181-63890450bf8c": {
+        "id": "ef330994-e947-42d6-a181-63890450bf8c",
         "position": {
-          "x": 1612.7142857142853,
-          "y": 21.841269841269828
+          "x": 1844.7833251953125,
+          "y": 84
         },
         "orientation": 0,
         "type": "input-output",
@@ -378,80 +378,80 @@
       }
     },
     "links": {
-      "4a6ddaa8-9622-42f7-81a7-1d1accbf4969": {
-        "id": "4a6ddaa8-9622-42f7-81a7-1d1accbf4969",
+      "0525af64-4262-4cd4-96b6-abcf4021efeb": {
+        "id": "0525af64-4262-4cd4-96b6-abcf4021efeb",
         "from": {
-          "nodeId": "cb0f035b-ecea-40c7-aa06-539c0e923252",
-          "portId": "occ_taxa"
-        },
-        "to": {
-          "nodeId": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
-          "portId": "occ_taxa"
-        }
-      },
-      "18a0c214-be51-4b77-8d0d-db6ed844ed0a": {
-        "id": "18a0c214-be51-4b77-8d0d-db6ed844ed0a",
-        "from": {
-          "nodeId": "cb0f035b-ecea-40c7-aa06-539c0e923252",
-          "portId": "pathway_file"
-        },
-        "to": {
-          "nodeId": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
-          "portId": "pathway_file"
-        }
-      },
-      "011bae34-5a76-4c49-9325-57f48ca77536": {
-        "id": "011bae34-5a76-4c49-9325-57f48ca77536",
-        "from": {
-          "nodeId": "cb0f035b-ecea-40c7-aa06-539c0e923252",
+          "nodeId": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
           "portId": "biotope_shp_path_file"
         },
         "to": {
-          "nodeId": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
           "portId": "biotope_shp_path_file"
         }
       },
-      "f1a6667b-c184-474c-8fff-61d8ab63dabf": {
-        "id": "f1a6667b-c184-474c-8fff-61d8ab63dabf",
+      "0f45b7be-3ee6-4ffb-9e66-7daf2025de16": {
+        "id": "0f45b7be-3ee6-4ffb-9e66-7daf2025de16",
         "from": {
-          "nodeId": "cb0f035b-ecea-40c7-aa06-539c0e923252",
-          "portId": "zones_file"
+          "nodeId": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
+          "portId": "occ_taxa"
         },
         "to": {
-          "nodeId": "ba597498-13f9-4af0-ab52-38c1e6590da0",
-          "portId": "zones_file"
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
+          "portId": "occ_taxa"
         }
       },
-      "50fc5019-102c-49a8-8ead-ad8f592ec13e": {
-        "id": "50fc5019-102c-49a8-8ead-ad8f592ec13e",
+      "93018fd0-9e96-43fd-a14a-dbc03227b5d3": {
+        "id": "93018fd0-9e96-43fd-a14a-dbc03227b5d3",
         "from": {
-          "nodeId": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
-          "portId": "out_path"
+          "nodeId": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
+          "portId": "pathway_file"
         },
         "to": {
-          "nodeId": "ba597498-13f9-4af0-ab52-38c1e6590da0",
-          "portId": "out_path"
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
+          "portId": "pathway_file"
         }
       },
-      "aef1ae39-fe0b-4ab6-85a1-9b9c43b24ad2": {
-        "id": "aef1ae39-fe0b-4ab6-85a1-9b9c43b24ad2",
+      "12bd4c89-bb85-4abc-8d0e-3af76a638e15": {
+        "id": "12bd4c89-bb85-4abc-8d0e-3af76a638e15",
         "from": {
-          "nodeId": "cb0f035b-ecea-40c7-aa06-539c0e923252",
+          "nodeId": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
           "portId": "weight_file"
         },
         "to": {
-          "nodeId": "1c18ab14-7b6e-4a0f-b94f-d03d12db793b",
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
           "portId": "weight_file"
         }
       },
-      "629ed1f3-4776-459d-a8f7-1f9028364894": {
-        "id": "629ed1f3-4776-459d-a8f7-1f9028364894",
+      "1d615770-d059-45c7-97ed-96e9199c4555": {
+        "id": "1d615770-d059-45c7-97ed-96e9199c4555",
         "from": {
-          "nodeId": "ba597498-13f9-4af0-ab52-38c1e6590da0",
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
+          "portId": "out_path"
+        },
+        "to": {
+          "nodeId": "d1a7b12f-478a-473b-a24c-b728da71df89",
+          "portId": "out_path"
+        }
+      },
+      "b66ee6b9-6d8f-4180-82ba-a835acd81f37": {
+        "id": "b66ee6b9-6d8f-4180-82ba-a835acd81f37",
+        "from": {
+          "nodeId": "52dded77-6cc9-49b4-afbf-6f1ababbe59c",
+          "portId": "zones_file"
+        },
+        "to": {
+          "nodeId": "d1a7b12f-478a-473b-a24c-b728da71df89",
+          "portId": "zones_file"
+        }
+      },
+      "9eb06f29-8a9c-4d68-937b-20a5d22fc02a": {
+        "id": "9eb06f29-8a9c-4d68-937b-20a5d22fc02a",
+        "from": {
+          "nodeId": "d1a7b12f-478a-473b-a24c-b728da71df89",
           "portId": "out_path2"
         },
         "to": {
-          "nodeId": "03f1c124-d239-45e8-aa07-9ddb7511e51a",
+          "nodeId": "ef330994-e947-42d6-a181-63890450bf8c",
           "portId": "out_path2"
         }
       }
