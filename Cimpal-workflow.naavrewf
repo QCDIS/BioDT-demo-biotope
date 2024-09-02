@@ -249,7 +249,7 @@
         "id": "d1a7b12f-478a-473b-a24c-b728da71df89",
         "position": {
           "x": 1457.7833251953125,
-          "y": 83
+          "y": 180.0
         },
         "orientation": 0,
         "type": "input-output",
@@ -330,8 +330,57 @@
       "ef330994-e947-42d6-a181-63890450bf8c": {
         "id": "ef330994-e947-42d6-a181-63890450bf8c",
         "position": {
-          "x": 1844.7833251953125,
-          "y": 84
+          "x": 1828.5351715764064,
+          "y": 180.0
+        },
+        "orientation": 0,
+        "type": "input-output",
+        "ports": {
+          "out_path2": {
+            "properties": {
+              "color": "#d27988"
+            },
+            "id": "out_path2",
+            "type": "left",
+            "position": {
+              "x": 36,
+              "y": 74.5
+            }
+          }
+        },
+        "properties": {
+          "title": "cimpal-upload-results-gabriel-pelouze-lifewatch-eu",
+          "vars": [
+            {
+              "name": "out_path2",
+              "direction": "input",
+              "type": "datatype",
+              "color": "#d27988"
+            }
+          ],
+          "params": [
+            "param_s3_server",
+            "param_s3_access_key",
+            "param_s3_secret_key",
+            "param_s3_prefix_output",
+            "param_s3_bucket_output"
+          ],
+          "inputs": [
+            "out_path2"
+          ],
+          "outputs": [],
+          "og_node_id": "4b0b9e7"
+        },
+        "size": {
+          "width": 250,
+          "height": 150
+        }
+      },
+      "104eeaaa-4ff3-4618-9c4e-7b9d71eff53f": {
+        "id": "104eeaaa-4ff3-4618-9c4e-7b9d71eff53f",
+        "position": {
+          "x": 1828.5351715764064,
+          "y": 0
         },
         "orientation": 0,
         "type": "input-output",
@@ -452,6 +501,17 @@
         },
         "to": {
           "nodeId": "ef330994-e947-42d6-a181-63890450bf8c",
+          "portId": "out_path2"
+        }
+      },
+      "f63d01e5-33fd-41fb-96da-5d870164b61a": {
+        "id": "f63d01e5-33fd-41fb-96da-5d870164b61a",
+        "from": {
+          "nodeId": "20851d27-523e-4e5c-a375-d8fe49aa0c29",
+          "portId": "out_path"
+        },
+        "to": {
+          "nodeId": "104eeaaa-4ff3-4618-9c4e-7b9d71eff53f",
           "portId": "out_path2"
         }
       }
